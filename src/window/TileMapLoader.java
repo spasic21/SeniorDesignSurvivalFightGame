@@ -37,8 +37,8 @@ public class TileMapLoader {
 		int tileLocationX = 0, tileLocationY = 0;
 		
 		Object obj = new JSONParser().parse(new FileReader(filePath));
-		BufferedImage tilesetImage = loader.loadImage("/PokemonTileSet.png");
-		BufferedImage collisionTileset = loader.loadImage("/CollisionLayer.png");
+		BufferedImage tilesetImage = loader.loadImage("res/PokemonTileSet.png");
+		BufferedImage collisionTileset = loader.loadImage("res/CollisionLayer.png");
 		spriteSheet = new SpriteSheet(tilesetImage);
 		collisionSheet = new SpriteSheet(collisionTileset);
 		JSONObject jo = (JSONObject) obj;

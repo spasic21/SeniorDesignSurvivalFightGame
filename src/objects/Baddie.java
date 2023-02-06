@@ -54,7 +54,7 @@ public class Baddie extends GameObject{
 		BufferedImageLoader loader = new BufferedImageLoader();
 		
 		try{
-			baddie_sheet = loader.loadImage("/FriezaSpriteSheet.png");
+			baddie_sheet = loader.loadImage("res/FriezaSpriteSheet.png");
 		}catch(Exception e){
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}

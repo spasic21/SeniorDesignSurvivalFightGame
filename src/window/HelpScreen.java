@@ -25,7 +25,7 @@ public class HelpScreen {
 	private String helpText5 = "To go back to the Main Menu, use the Backspace key.";
 	
 	public HelpScreen(){
-		this.image = imageLoader.loadImage("/GokuFriezaHelpScreen.jpg");
+		this.image = imageLoader.loadImage("res/GokuFriezaHelpScreen.jpg");
 	}
 	
 	public void tick(){}

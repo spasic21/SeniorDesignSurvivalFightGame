@@ -24,7 +24,7 @@ public class Menu extends MouseAdapter{
 	public static MusicPlayer musicPlayer = new MusicPlayer();
 	
 	public Menu(){
-		this.image = imageLoader.loadImage("/GokuVSFrieza.jpg");
+		this.image = imageLoader.loadImage("res/GokuVSFrieza.jpg");
 		musicPlayer.loop("res/GohanPowersUp.wav");
 	}
 	

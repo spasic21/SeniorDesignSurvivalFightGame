@@ -1,7 +1,9 @@
 package window;
 
 import java.awt.image.BufferedImage;
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
@@ -18,7 +20,7 @@ public class BufferedImageLoader {
 	
 	public BufferedImage loadImage(String path){
 		try{
-			image = ImageIO.read(getClass().getResource(path));
+			image = ImageIO.read(new FileInputStream(path));
 		}catch(IOException e){
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}

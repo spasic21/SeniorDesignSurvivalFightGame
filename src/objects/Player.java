@@ -51,7 +51,7 @@ public class Player extends GameObject{
 		BufferedImageLoader loader = new BufferedImageLoader();
 		
 		try{
-			goku_sheet = loader.loadImage("/GokuSpriteSheet.png");
+			goku_sheet = loader.loadImage("res/GokuSpriteSheet.png");
 		}catch(Exception e){
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
